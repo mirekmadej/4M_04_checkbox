@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4M_04_checkbox.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Label
+                Text="HASŁO"
+                FontSize="32"
+                />
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <CheckBox
+                    Grid.Column="0"
+                    Grid.Row="0"
+                    IsChecked="False"
+                    x:Name="chkMaleLitery"
+                    />
+                <Label
+                    Text="małe litery"
+                    FontSize="24"
+                    Grid.Column="1"
+                    Grid.Row="0"
+                    />
+                <CheckBox
+                    Grid.Column="0"
+                    Grid.Row="1"
+                    IsChecked="False"
+                    x:Name="chkDuzeLitery"
+                    />
+                <Label
+                    Text="duże litery"
+                    FontSize="24"
+                    Grid.Column="1"
+                    Grid.Row="1"
+                    />
+                <CheckBox
+                    Grid.Column="0"
+                    Grid.Row="2"
+                    IsChecked="False"
+                    x:Name="chkCyfry"
+                    />
+                <Label
+                    Text="cyfry"
+                    FontSize="24"
+                    Grid.Column="1"
+                    Grid.Row="2"
+                    />
+                <CheckBox
+                    Grid.Column="0"
+                    Grid.Row="3"
+                    IsChecked="False"
+                    x:Name="chkZnakiSpec"
+                    />
+                <Label
+                    Text="znaki specjalne"
+                    FontSize="24"
+                    Grid.Column="1"
+                    Grid.Row="3"
+                    />
+            </Grid>
+            <Button
+                Text="GENERUJ"
+                Clicked="btnGenerujClicked"
+                />
+            <Label
+                Text="wynik"
+                FontSize="32"
+                x:Name="lblWynik"
+                />
+            <CheckBox
+                CheckedChanged="chkXChengedState"
+                x:Name="chkX"
+                />
+            <Label
+                Text="checkbox unchecked"
+                x:Name="lblCheckboxState"
+                FontSize="32"
+                />
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
